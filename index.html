@@ -4,43 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will's Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
+    <title>Will's website</title>
+    <link rel="stylesheet" type="text/css" href="style.css"
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar_container"></div>
-        <a href="/" id="navbar__logo"><i class="fas fa-gem"></i> NEXT</a>
-        <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="/" class="navbar__links"> Home </a>
-                </li>
-            <li class="navbar__item">
-                <a href="tech.html" class="navbar__links"> Tech </a>
-                </li>
-            <li class="navbar__item">
-                <a href="tech.html" class="navbar__links"> Products </a>
-                </li>
-            <li class="navbar__btn">
-                <a href="tech.html" class="button"> Sign up </a>
-            </li>
-            </ul>
-        </div>
-    </nav>
-    <script src="app.js"></script>
+    <h1> Website under construction so for now here is a calculator.</h1>
+    <form class="calculator" name="calc">
+        <input class="value" type="text" name="txt" readonly="">
+        <span class="num clear" onclick="document.calc.txt.value =''">c</span>
+        <span class="num" onclick="document.calc.txt.value += '/'">/</span>  
+        <span class="num" onclick="document.calc.txt.value += '*'">*</span>  
+        <span class="num" onclick="document.calc.txt.value += '7'">7</span>
+        <span class="num" onclick="document.calc.txt.value += '8'">8</span>
+        <span class="num" onclick="document.calc.txt.value += '9'">9</span> 
+        <span class="num" onclick="document.calc.txt.value += '-'">-</span> 
+        <span class="num" onclick="document.calc.txt.value += '4'">4</span> 
+        <span class="num" onclick="document.calc.txt.value += '5'">5</span>
+        <span class="num" onclick="document.calc.txt.value += '6'">6</span> 
+        <span class="num plus" onclick="document.calc.txt.value += '+'">+</span>    
+        <span class="num" onclick="document.calc.txt.value += '1'">1</span>
+        <span class="num" onclick="document.calc.txt.value += '2'">2</span>  
+        <span class="num" onclick="document.calc.txt.value += '3'">3</span>         
+        <span class="num" onclick="document.calc.txt.value += '0'">0</span>    
+        <span class="num" onclick="document.calc.txt.value += '00'">00</span>    
+        <span class="num" onclick="document.calc.txt.value += '.'">.</span>    
+        <span class="num equal" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>    
+    </form>
 </body>
 </html>
